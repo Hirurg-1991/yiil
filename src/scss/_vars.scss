@@ -1,0 +1,58 @@
+$accent-color: #E1B168;
+$default-color: #fff;
+$text-color:#000;
+$bg: #fff;
+$bread:#A6967B;
+
+%ProximaNova-400{
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: 400;
+}
+%ProximaNova-300{
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 300;
+}
+%ProximaNova-700{
+  font-family: 'ProximaNova', sans-serif;
+  font-weight: 700;
+}
+
+
+$maxWidth: 1640; //переменная ширина контейнера
+//mixin адаптивного изменения шрифта планшетов и мобтльніх устройств
+@mixin adaptiv-font($pcSize, $mobSize){
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+  @media (max-width:1640px){
+    $maxWidth: 970 + 1640;
+    $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+@media (max-width:970px){
+  $maxWidth: 970 + 1640+750;
+  $addSize: $pcSize - $mobSize;
+$maxWidth: $maxWidth - 320;
+font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+  @media (min-width:1650px){
+    font-size: $pcSize + px;
+}
+}
+
+@function max($numbers...){
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...){
+  @return m#{a}x(#{$numbers});
+}
+
+%checkbox-hidden,
+%radio-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+position: absolute;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title":"News"
+})
+
+<body>
+    @@include('html/header.html',{
+    "showText":"logo__text--show"
+    })
+    <main class="main">
+        <section class="news-detail section">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="prodjectlist.html" class="breadcrumbs__link">Zurück zur Übersicht
+
+                                <svg class="breadcrumbs__ico ">
+                                    <use xlink:href="img/icons/icons.svg#arrow-back">
+                                    </use>
+                                </svg>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="row justify-beetwen">
+                    <div class="col col_3 col_tab-12 col_mob-p-12 mt-3 mr-2 ">
+                        <h4 class="news-detail__date">// 7. September 2021</h4>
+                        <h1 class="news-detail__title">Grundsteinlegung für das Pflegeheim der Tabea-Diakonie in Hamburg</h1>
+                        
+                        <p class="news-detail__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                            eirmod tempor invidunt ut labore et dolore.</p>
+                            <p class="news-detail__text">NIIL Architekten spendeten für den ambulanten Hospiz im Rahmen des Tabea- Baut- Team Projektes.</p>
+                                <p class="news-detail__text">(Bildnachweis: Diakoniewerk Tabea e.V.)</p>
+                    </div>
+                    <div class="col col_8 col_tab-12 col_mob-p-12 ">
+                        <div class="news-detail__img">
+                            <img src="img/news/news-4.jpg" alt="projekt">
+                        </div>
+                        <div class="row">
+                            <div class="news-detail__list row justify-beetwen">
+                                
+                                <p class="news-detail__list-item col col_5 col_tab-5 col_mob-p-12 mr-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                                <p class="news-detail__list-item col col_5 col_tab-5 col_mob-p-12">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row no-wrap news-detail-slider justify-beetwen ">
+                   
+                       <div class="news-detail-slider__img col col_4 col_tab-5 col_mob-p-12">                       
+                        <a href="./img/news/slider/slider-1.jpg"   data-fancybox="gallery2">
+                            <img src="./img/news/slider/slider-1.jpg" alt="slider-1"></a>
+                       </div>                   
+                  
+                        <div class="news-detail-slider__img col col_4 col_tab-5 col_mob-p-12">
+                            <a href="./img/news/slider/slider-2.jpg"   data-fancybox="gallery2">
+                                <img src="./img/news/slider/slider-2.jpg" alt="slider-2"></a>
+                        </div>                   
+                    
+                        <div class="news-detail-slider__img col col_4 col_tab-5 col_mob-p-12">
+                            <a href="./img/news/slider/slider-3.jpg"   data-fancybox="gallery2">
+                                <img src="./img/news/slider/slider-3.jpg" alt="slider-3"></a>
+                        </div>                                   
+                </div>
+            </div>        
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
